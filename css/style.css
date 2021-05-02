@@ -3,6 +3,7 @@
     --c-2: #855FB1;
     --c-3: hsl(240, 21%, 20%);
     --c-4: hsl(240, 10%, 57%);
+    --c-4b: hsla(240, 10%, 57%, 60%);
     --c-5: hsl(192, 90%, 77%);
     --c-6: hsl(268, 100%, 86%);
     --c-7: hsl(0, 0%, 98%);
@@ -61,31 +62,7 @@ body {
 
 
 
-/*BTNS*/
 
-.btn {
-    border-radius: 3em;
-    transition: filter 500ms;
-    color: var(--c-7);
-    font-size: inherit;
-    font-family: inherit;
-    border: 0;
-    padding: 1em 2em;
-}
-
-.btn:hover, .btn:focus {
-    filter: brightness(120%);
-}
-
-
-.btn--blue {
-    background: var(--c-1);
-}
-
-
-.btn--purple {
-    background: var(--c-2);
-}
 
 
 
@@ -101,6 +78,7 @@ body {
     display: grid;
     grid-template-columns: 50% 50%;
     row-gap: 2em;
+    overflow-x: hidden;
 }
 
 
@@ -162,30 +140,6 @@ body {
 
 
 
-.step {
-    border-radius: 50%;
-    border: var(--c-4) solid 1px;
-    width: 3.5em;
-    height: 3.5em;
-    line-height: 3.5em;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-}
-
-
-.step::after {
-    content: '';
-    height: 90px;
-    background: var(--c-4);
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 1px;
-    transform: translateY(-100%);
-}
 
 
 .step-1__images {
@@ -209,3 +163,100 @@ body {
 .step-1__title {
     margin: 1em 0;
 }
+
+
+
+.step-2 {
+    width: 100%;
+    background: url(../mobile/image-footer.jpg);
+    background-size: cover;
+    position: relative;
+    color: var(--c-7);
+    padding-bottom: 4em;
+}
+.step-2 > * {
+    z-index: 99;
+    position: relative;
+}
+.step-2::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--c-1);
+    display: block;
+    content: '';
+    z-index: 1;
+    opacity: 0.8;
+}
+
+.step-2__title {
+    color: inherit;
+    margin-bottom: 1em;
+}
+
+.step-2__description {
+    font-size: 1.125rem;
+    margin-bottom: 1.5em;
+}
+
+
+.step {
+    border-radius: 50%;
+    border: var(--c-4b) solid 1px;
+    width: 3.5em;
+    height: 3.5em;
+    line-height: 3.5em;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--c-7);
+    color: var(--c-4);
+
+}
+
+
+.step::after {
+    content: '';
+    height: 90px;
+    background: var(--c-4b);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 1px;
+    transform: translateY(-100%);
+}
+
+
+/*BTNS*/
+
+.btn {
+    border-radius: 3em;
+    transition: filter 500ms;
+    color: var(--c-7);
+    font-size: inherit;
+    font-family: inherit;
+    border: 0;
+    padding: 1em 2em;
+}
+
+.btn:hover, .btn:focus {
+    filter: brightness(120%);
+}
+
+
+.btn__lighter {
+    opacity: 0.7;
+}
+
+.btn--blue {
+    background: var(--c-1);
+}
+
+
+.btn--purple {
+    background: var(--c-2);
+}
+
