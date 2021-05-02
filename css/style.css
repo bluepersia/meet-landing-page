@@ -142,8 +142,70 @@ body {
     margin-bottom: 1em;
 }
 
+
+
+.step-container {
+    margin-top: 9em;
+    position: relative;
+    padding: 5em 0 0;
+}
+
+
+
 .container {
     width: 87.2%;
     margin-left: auto;
     margin-right: auto;
+}
+
+
+
+
+
+.step {
+    border-radius: 50%;
+    border: var(--c-4) solid 1px;
+    width: 3.5em;
+    height: 3.5em;
+    line-height: 3.5em;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+
+.step::after {
+    content: '';
+    height: 90px;
+    background: var(--c-4);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 1px;
+    transform: translateY(-100%);
+}
+
+
+.step-1__images {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(auto, 151px));
+    gap: 1.5em;
+    justify-content: center;
+    margin-bottom: 4em;
+}
+
+.step-1__img {
+    border-radius: 5%;
+}
+
+
+.step-1__text {
+    max-width: 330px;
+    margin: 0 auto;
+}
+
+.step-1__title {
+    margin: 1em 0;
 }
