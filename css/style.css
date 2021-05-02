@@ -270,6 +270,27 @@ body {
 }
 
 
+@media (min-width: 768px)
+{
+
+    .step-2__content > * {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .step-2__title {
+        max-width: 457px;
+    }
+
+    .step-2__description {
+        max-width: 573px;
+    }
+
+    .step-2 {
+        background: url(../tablet/image-footer.jpg);
+    }
+}
+
+
 .step {
     border-radius: 50%;
     border: var(--c-4b) solid 1px;
