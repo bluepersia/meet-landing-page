@@ -266,6 +266,14 @@ body {
     }
 }
 
+@media (min-width: 1024px)
+{
+    .step-1__images {
+        gap: 1.8em;
+        grid-template-columns: repeat(auto-fit, minmax(auto, 268px));
+    }
+}
+
 
 .step-2 {
     width: 100%;
@@ -340,7 +348,10 @@ body {
 {
     .step-container {margin-top: 11em; }
 }
-
+@media (min-width: 1024px)
+{
+    .step-container {margin-top: 13em; }
+}
 
 .container {
     width: 87.2%;
