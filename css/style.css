@@ -1,6 +1,6 @@
 :root {
     --c-1: hsl(192, 37%, 48%);
-    --c-2: hsl(268, 34, 53%);
+    --c-2: #855FB1;
     --c-3: hsl(240, 21%, 20%);
     --c-4: hsl(240, 10%, 57%);
     --c-5: hsl(192, 90%, 77%);
@@ -28,36 +28,61 @@ html {
 
 
 /*TYPOGRAPHY */
-body {
+body { 
     line-height: 1.4;
     font-weight: 500;
+    color: var(--c-4);
+    font-family: var(--font-main);
 }
 
 .heading-1 {
     font-size: 3.55rem;
     font-weight: 900;
     line-height: 1;
+    color: var(--c-3);
 }
 
 .heading-2 {
     font-size: 2.22rem;
     line-height: 1.1;
+    color: var(--c-3);
 }
-
-
+ 
 .overline {
     font-size: 0.88rem;
     line-height: 1.625;
     letter-spacing: 0.25em;
     text-transform: uppercase;
+    color: var(--c-1);
 }
 
 
 
 /*BTNS*/
 
+.btn {
+    border-radius: 3em;
+    transition: filter 500ms;
+    color: var(--c-7);
+    font-size: inherit;
+    font-family: inherit;
+    border: 0;
+    padding: 1em 2em;
+}
+
+.btn:hover, .btn:focus {
+    filter: brightness(120%);
+}
 
 
+.btn--blue {
+    background: var(--c-1);
+}
+
+
+.btn--purple {
+    background: var(--c-2);
+}
 
 
 
