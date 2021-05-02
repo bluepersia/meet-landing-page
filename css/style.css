@@ -1,0 +1,63 @@
+:root {
+    --c-1: hsl(192, 37%, 48%);
+    --c-2: hsl(268, 34, 53%);
+    --c-3: hsl(240, 21%, 20%);
+    --c-4: hsl(240, 10%, 57%);
+    --c-5: hsl(192, 90%, 77%);
+    --c-6: hsl(268, 100%, 86%);
+    --c-7: hsl(0, 0%, 98%);
+
+    --font-main: 'Red Hat Display', sans-serif;
+}
+
+
+
+html {
+    font-size: 112.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+
+
+/*TYPOGRAPHY */
+body {
+    line-height: 1.4;
+    font-weight: 500;
+}
+
+.heading-1 {
+    font-size: 3.55rem;
+    font-weight: 900;
+    line-height: 1;
+}
+
+.heading-2 {
+    font-size: 2.22rem;
+    line-height: 1.1;
+}
+
+
+.overline {
+    font-size: 0.88rem;
+    line-height: 1.625;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+}
+
+
+
+/*BTNS*/
+
+
+
+
+
+
