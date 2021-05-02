@@ -60,7 +60,17 @@ body {
     color: var(--c-1);
 }
 
+@media (min-width: 768px)
+{
+   .heading-1 {
+       font-size: 3rem;
+   }
 
+   .heading-2 {
+       font-size: 2.5rem;
+   }
+
+}
 
 
 
@@ -72,6 +82,13 @@ body {
 
 .logo {
     padding:2.5em;
+}
+
+@media (min-width: 768px)
+{
+    .logo {
+        padding-bottom: 3em;
+    }
 }
 
 .hero {
@@ -120,6 +137,34 @@ body {
     margin-bottom: 1em;
 }
 
+
+@media(min-width: 768px)
+{
+    
+    .hero {
+        row-gap: 4em;
+    }
+    .hero__title {
+        max-width:339px;
+    }
+
+    .hero__description {
+        max-width: 457px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero__cta {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 0.9em;
+    }
+    .hero__cta-download {
+        margin-bottom: 0;
+        
+    }
+}
 
 
 .step-container {
@@ -259,4 +304,6 @@ body {
 .btn--purple {
     background: var(--c-2);
 }
+
+
 
