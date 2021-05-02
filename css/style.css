@@ -324,6 +324,7 @@ body {
 
     .step-2__description {
         max-width: 573px;
+        font-size: 1rem;
     }
 
     .step-2 {
@@ -332,6 +333,29 @@ body {
 }
 
 
+@media (min-width: 1024px)
+{
+
+    .step-2 {
+        padding: 6em;
+        background: url(../desktop/image-footer.jpg);
+    }
+    .step-2__content {
+        display: grid;
+        grid-template-columns: repeat(3, 33%);
+        text-align: left;
+        column-gap: 6em;
+        align-items:center;
+    }
+
+    .step-2__content > * {
+        margin: 0;
+    }
+
+    .step-2__btn {
+        width: fit-content;
+    }
+}
 
 
 
@@ -350,7 +374,7 @@ body {
 }
 @media (min-width: 1024px)
 {
-    .step-container {margin-top: 13em; }
+    .step-container {margin-top: 13em; padding-top: 6em; }
 }
 
 .container {
