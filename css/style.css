@@ -168,7 +168,7 @@ body {
         row-gap: 4em;
     }
     .hero__title {
-        max-width:339px;
+        max-width:420px;
     }
 
     .hero__description {
@@ -193,7 +193,7 @@ body {
 @media (min-width: 1024px)
 {
     .hero {
-        grid-template-columns: 31.25% 37.5% 31.25%;
+        grid-template-columns: 31% 38% 31%;
     }
 
     .hero__col-1 {
@@ -256,7 +256,7 @@ body {
 
 
     .step-1__text {
-        max-width: 573px;
+        max-width: 650px;
     }
 
     .step-1__title {
@@ -271,6 +271,12 @@ body {
     .step-1__images {
         gap: 1.8em;
         grid-template-columns: repeat(auto-fit, minmax(auto, 268px));
+    }
+
+    .step-1__description {
+        max-width: 540px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
